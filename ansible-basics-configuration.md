@@ -157,7 +157,7 @@ A custom `ansible.cfg` only needs the parameters that should be changed. Unspeci
 
 ---
 
-## Key Interview Notes
+## Key Notes
 
 ### What is Ansible?
 
