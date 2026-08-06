@@ -199,7 +199,7 @@ The favicon 404 is normal because the file does not exist in the default Nginx i
 
 ---
 
-## Interview takeaway
+## Key takeaway
 
 **Each Docker container has its own network namespace and IP address. Multiple containers can listen on port 80 simultaneously because the ports exist in different namespaces, while Docker exposes them externally by mapping different host ports to each container port using bridge networking and NAT.**
 
