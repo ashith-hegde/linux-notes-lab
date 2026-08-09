@@ -13,13 +13,15 @@
 localhost ansible_connection=local
 ```
 
+Purpose: `ansible_connection=local` tells Ansible to execute tasks directly on the local machine instead of using SSH.
+
 ## Validation
 
 ```bash
 ansible local -i inventory.ini -m ping
 ```
 
-Result: `pong` was returned successfully.
+Result: The ping module returned `pong`, confirming successful execution on localhost.
 
 ## Ad-hoc command practice
 
