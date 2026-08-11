@@ -170,6 +170,28 @@ For sensitive data such as passwords, Ansible provides **Ansible Vault** to encr
 
 ---
 
+## Why grouping is useful
+
+Grouping allows Ansible to manage multiple servers together.
+
+Example:
+
+```ini
+[webservers]
+web1.example.com
+web2.example.com
+```
+
+A command such as:
+
+```bash
+ansible webservers -i inventory.ini -m ping
+```
+
+runs against **all hosts in the `webservers` group**.
+
+---
+
 # Key Takeaways
 
 * Inventory tells Ansible **which hosts to manage**.
